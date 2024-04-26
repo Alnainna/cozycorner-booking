@@ -16,7 +16,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: 'Hotel Management App',
+  title: 'CozyCorner Booking',
   description: 'Discover the best hotel rooms',
 };
 

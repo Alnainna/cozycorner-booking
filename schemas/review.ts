@@ -32,6 +32,27 @@ const review = {
       validation: Rule =>
         Rule.required().min(1).max(5).error('Rating must be between 1 and 5'),
     }),
+    defineField({
+      name: 'questionsAndAnswers',
+      title: 'Questions and Answers',
+      type: 'array',
+      of: [{ 
+        type: 'object',
+        fields: [
+          {
+            name: 'question',
+            title: 'Question',
+            type: 'string',
+          },
+          {
+            name: 'answer',
+            title: 'Answer',
+            type: 'array',
+            of: [{type: 'string'}]
+          }
+        ]
+      }],
+    }),
   ],
 };
 
