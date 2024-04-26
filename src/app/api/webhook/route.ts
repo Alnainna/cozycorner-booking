@@ -27,10 +27,10 @@ export async function POST(req: Request, res: Response) {
   switch (event.type) {
     case checkout_session_completed:
       const session = event.data.object;
-
+    
       const {
         // @ts-ignore
-        metadata: {
+        Metadata: {
           adults,
           checkinDate,
           checkoutDate,
@@ -40,7 +40,7 @@ export async function POST(req: Request, res: Response) {
           user,
           discount,
           totalPrice,
-        },
+        }, 
       } = session;
 
       await createBooking({
