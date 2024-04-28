@@ -30,7 +30,7 @@ export async function POST(req: Request, res: Response) {
     
       const {
         // @ts-ignore
-        metadata: {
+        Metadata: {
           adults,
           checkinDate,
           checkoutDate,
@@ -42,6 +42,9 @@ export async function POST(req: Request, res: Response) {
           totalPrice,
         }, 
       } = session;
+
+      console.log('Received Stripe Event:', event.type);
+      console.log('Session Metadata:', session.metadata);
 
       await createBooking({
         adults: Number(adults),
