@@ -2,9 +2,11 @@ import Image from 'next/image';
 
 export const heading1 = (
   <>
-    <h1 className='font-heading mb-6'>Explore our CozyCorner rooms</h1>
+    <h3 className='font-heading mb-7'>COZYCORNER BOOKING</h3>
     <p className='text-[#4a4a4a] dark:text-[#ffffffea] mb-12 max-w-lg'>
-      Experience the luxury and the elegance of our rooms.
+    With Cozycorner Booking, Unlock the Door to Comfort and Elegance.
+    Discover Your Perfect Retreat – Indulge in our selection of exquisite rooms 
+    tailored for your comfort and pleasure.
     </p>
     <button className='btn-primary'>Get Started</button>
   </>
@@ -14,8 +16,8 @@ export const section2 = (
   <div className='md:grid hidden gap-8 grid-cols-1'>
     <div className='rounded-2xl overflow-hidden h-48'>
       <Image
-        src='/images/hero-1.jpeg'
-        alt='hero-1'
+        src='/images/img-1.jpg'
+        alt='img-1'
         width={300}
         height={300}
         className='img scale-animation'
@@ -25,8 +27,8 @@ export const section2 = (
     <div className='grid grid-cols-2 gap-8 h-48'>
       <div className='rounded-2xl overflow-hidden'>
         <Image
-          src='/images/hero-2.jpeg'
-          alt='hero-2'
+          src='/images/img-2.jpg'
+          alt='img-2'
           width={300}
           height={300}
           className='img scale-animation'
@@ -34,8 +36,8 @@ export const section2 = (
       </div>
       <div className='rounded-2xl overflow-hidden'>
         <Image
-          src='/images/hero-3.jpeg'
-          alt='hero-3'
+          src='/images/img-3.jpg'
+          alt='img-3'
           width={300}
           height={300}
           className='img scale-animation'

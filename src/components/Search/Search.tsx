@@ -31,7 +31,8 @@ const Search: FC<Props> = ({
   };
 
   return (
-    <section className='bg-tertiary-light px-4 py-6 rounded-lg'>
+    <center>
+    <section style={{ width: '70%'}} className='bg-tertiary-light px-6 py-9 rounded-lg'>
       <div className='container mx-auto flex gap-4 flex-wrap justify-between items-center'>
         <div className='w-full md:1/3 lg:w-auto mb-4 md:mb-0'>
           <label className='block text-sm font-medium mb-2 text-black'>
@@ -73,7 +74,7 @@ const Search: FC<Props> = ({
           Search
         </button>
       </div>
-    </section>
+    </section></center>
   );
 };
 
